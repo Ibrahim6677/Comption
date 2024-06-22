@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* start header section */
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 180px;
+}
+.logo {
+  color: #3a6cf4;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+#abd:hover {
+  transform: scale(1.1);
+}
+.navigation a {
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  padding-left: 30px;
+}
+.navigation a:hover {
+  color: #601cfc;
+  text-decoration: underline;
+}
+/* end header section */
+
+/* start main section */
+section {
+  padding: 100px 200px;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(photo/back-phon.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main h2 {
+  color: #fff;
+
+  font-size: 35px;
+  font-weight: 500;
+}
+.main h2 span {
+  display: inline-block;
+  margin-top: 13px;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #4e9eff;
+}
+.main h3 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.main-btn {
+  color: #fff;
+  background-color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.3em;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 7px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 0.5s ease;
+}
+.main-btn:hover {
+  background-color: #0a49f6;
+  transform: scale(1.1);
+}
+.social-icons a {
+  color: #fff;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+
+/* end main section */
+
+/* start cards section */
+.title {
+  display: flex;
+  justify-content: center;
+  color: #3a6cf4;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.card {
+  background-color: #fff;
+  width: 22em;
+  box-shadow: 0px 7px 32px rgba(1 1 1 / 15%);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 11px;
+  transition: 0.5s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+.info {
+  text-align: center;
+}
+.info h3 {
+  color: #3a6cf4;
+  font-size: 1.5em;
+  margin: 10px;
+  font-weight: 700;
+}
+/* start cards section  */
+
+/* start project section */
+.project {
+  background-color: #000016;
+}
+.project .content {
+  margin-top: 30px;
+}
+.project-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 7px;
+  margin: 20px;
+  transition: 0.5s ease;
+}
+.project-card:hover {
+  transform: scale(1.1);
+}
+.project-imge img {
+  width: 100%;
+}
+.project-card:hover .project-imge {
+  opacity: 0.9;
+}
+.project-info {
+  padding: 1em;
+}
+.project-category {
+  font-size: 0.9em;
+  color: #000;
+}
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.project-title span {
+  font-size: 1.3em;
+}
+.project-title a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #3a6cf4;
+}
+.project-title a:hover {
+  color: #601cfc;
+}
+/* end project section */
+
+/* start contact Section */
+.contact .icon {
+  font-size: 5em;
+}
+.contact .card .info h3 {
+  font-weight: 900;
+}
+.contact .card .info p {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+/* end contact Section */
+
+/* start footer */
+.footer {
+  background-color: #000016;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+}
+.footer .end {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+.footer .end span {
+  color: #3a6cf4;
+}
+.footer .end:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+/* end footer  */
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .navigation a {
+    padding-left: 10px;
+  }
+
+  .title {
+    font-size: 1.7em;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+  .main h2 {
+    font-size: 1em;
+  }
+  .main h3 {
+    font-size: 1.6em;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main {
+    background-position: right;
+  }
+}
